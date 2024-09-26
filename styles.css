@@ -1,0 +1,152 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 1;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.5); /* Menambahkan efek gelap */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 700px;
+    right: 900px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.carousel-caption1 {
+    position: absolute;
+    bottom: 450px;
+    left: 900px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10; /* Pastikan tombol berada di atas gambar */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+section {
+    padding: 40px;
+    margin: 40px 0;
+    background-color: white;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.carousel-caption2 {
+    position: relative;
+    bottom: 20px;
+    right: 1200px;
+    color: rgb(247, 242, 242);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.side-image {
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+    filter: brightness(0.7); /* Menambahkan efek gelap */
+}
+
+.side-image.right {
+    margin-left: 250px;
+    margin-right: 0;
+    order: 2; /* Menempatkan gambar di sebelah kanan */
+}
+
+footer {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.5rem;
+    padding: 10px;
+}
